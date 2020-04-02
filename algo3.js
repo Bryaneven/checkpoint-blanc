@@ -31,6 +31,6 @@ function totalViews (videoArray){
     for(let video of videoArray){
         total+= video.nbView;
     }
-    return total
+    return total/videoArray.length
 }
 console.log(totalViews(videos));
